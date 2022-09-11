@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/ericcst197/product-preview-card-component)
+- Live Site URL: [Live Demo](https://ericcst197.github.io/product-preview-card-component/)
 
 ## My process
 
