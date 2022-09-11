@@ -1,0 +1,109 @@
+.card{
+    width:90%;
+    max-width: 43rem;
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media(min-width: $tablet){
+        height: 31rem;
+        margin-top: 8rem;
+        display: flex;
+    }
+    // display: flex;
+    // flex-direction: column;
+
+    &__image {
+        height: 18rem;
+        width: 100%;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+
+        @media(min-width: $tablet){
+            background-image: url(../images/image-product-desktop.jpg);
+            width: 50%;
+            height: 31rem;
+        }
+    }
+
+    &__content{
+        flex: 1;
+
+        color: $dark-blue-1;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        @media(min-width: $tablet){
+            padding: 2rem 2.5rem;
+            justify-content: space-around;
+        }
+    }
+    
+    &__subtitle{
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 200;
+    }
+    
+    &__title{
+        color: $dark-blue-2;
+        font-family: $font-primary;
+        font-size: 2.3rem;
+        line-height: 1;
+        margin: 1rem 0;
+    }
+
+    &__description{
+        line-height: 1.6;
+        font-weight: 400;
+        height: min-content;
+    }
+
+    &__price{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1.5rem 0 1.2rem;
+        
+        &--discount{
+            color: $green;
+            font-family: $font-primary;
+            font-size: 2rem;
+            margin-right: 2rem;
+            @media(min-width: $tablet){
+                margin-right: 1.5rem;
+            }
+        }
+
+        &--normal{
+            text-decoration: line-through;
+        }
+    }
+
+    button{
+        height: 3.5rem;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        background-color: $green;
+        cursor:pointer;
+        transition: all .2s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            color: $white;
+            font-weight: 500;
+            font-family: $font-display;
+            margin-left: .8rem;
+        }
+    }
+
+    button:hover{
+        background-color: #1e503d;
+    }
+}
