@@ -4,6 +4,7 @@
     background-color: $white;
     border-radius: 10px;
     overflow: hidden;
+    cursor: default;
 
     @media(min-width: $tablet){
         height: 31rem;
@@ -66,6 +67,7 @@
         align-items: center;
         flex-wrap: wrap;
         margin: 1.5rem 0 1.2rem;
+        
         
         &--discount{
             color: $green;

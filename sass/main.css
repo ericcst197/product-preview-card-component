@@ -34,6 +34,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
+  cursor: default;
 }
 @media (min-width: 37.5em) {
   .card {
